@@ -13,4 +13,6 @@ logs
 dist
 **/dist
 
+.eslintcache
+.stylelintcache
 
