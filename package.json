@@ -13,8 +13,7 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "lint:style": "stylelint --fix ./**/*.{css,scss,vue,html}",
-    "postinstall": "simple-git-hooks"
+    "lint:style": "stylelint --fix ./**/*.{css,scss,vue,html}"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.18.1",
