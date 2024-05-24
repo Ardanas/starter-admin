@@ -1,0 +1,39 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss",
+    "stylelint-config-recommended-vue/scss",
+    "stylelint-config-recess-order"
+  ],
+  "overrides": [
+    {
+      "files": ["**/*.(scss|css|vue|html)"],
+      "customSyntax": "postcss-scss"
+    },
+    {
+      "files": ["**/*.(html|vue)"],
+      "customSyntax": "postcss-html"
+    }
+  ],
+  "ignoreFiles": ["*.{?([cm])[jt]s?(x),md,json}", "**/node_modules/**", "**/dist/**"],
+
+  "rules": {
+    "block-no-empty": true,
+    "font-family-no-missing-generic-family-keyword": null,
+    "value-keyword-case": null,
+    "no-descending-specificity": null,
+    "selector-class-pattern": null,
+    "property-no-unknown": null,
+    "value-no-vendor-prefix": null,
+    "property-no-vendor-prefix": null,
+    "scss/dollar-variable-pattern": null,
+    "scss/at-mixin-pattern": null,
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global", "v-deep", "deep"]
+      }
+    ]
+  }
+
+}
