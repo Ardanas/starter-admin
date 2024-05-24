@@ -1,5 +1,11 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
+import router from '@/router';
 
-createApp(App).mount('#app')
+const app = createApp(App)
+
+Object.values(import.meta.glob('./plugins/**', { eager: true })).forEach((i) => {
+  i.install({ app, router })
+})
+
+app.use(router).mount('#app')

@@ -1,0 +1,27 @@
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': #07b6b5
+    ),
+  ),
+  $text-color: (
+    'placeholder': #c1c5cd
+  ),
+  $bg-color: (
+    '': #f5f7fa
+  ),
+  $box-shadow: (
+    '': (
+        0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)
+    ),
+    'light': (
+        0 2px 12px 0 rgba(0, 0, 0, 0.1)
+    ),
+    'dark': (
+        0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .12)
+    )
+  ),
+  $fill-color: (
+    '': #edf2fc
+  )
+);
