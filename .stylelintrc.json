@@ -18,6 +18,7 @@
   "ignoreFiles": ["*.{?([cm])[jt]s?(x),md,json}", "**/node_modules/**", "**/dist/**"],
 
   "rules": {
+    "scss/at-import-partial-extension": null,
     "block-no-empty": true,
     "font-family-no-missing-generic-family-keyword": null,
     "value-keyword-case": null,

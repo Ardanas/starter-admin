@@ -11,6 +11,8 @@
   "license": "MIT",
   "keywords": [],
   "scripts": {
+    "dev": "pnpm run --filter ddd-demo dev",
+    "dev:components": "pnpm run --filter components dev",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "lint:style": "stylelint --fix ./**/*.{css,scss,vue,html}"
