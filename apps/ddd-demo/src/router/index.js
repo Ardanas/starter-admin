@@ -3,7 +3,7 @@ import { setupLayouts } from 'virtual:generated-layouts'
 import routes from '~pages'
 
 function createRouterFactory() {
-  return  createRouter({
+  return createRouter({
     history: createWebHistory(),
     routes: setupLayouts(routes),
   })
@@ -17,23 +17,16 @@ const router = createRouterFactory()
 // router.afterEach(() => {
 // });
 
-
 export function resetRouter() {
-  const newRouter = createRouterFactory();
-  router.matcher = newRouter.matcher; // reset router
+  const newRouter = createRouterFactory()
+  router.matcher = newRouter.matcher // reset router
 }
 
 router.$addRoutes = (params) => {
-  resetRouter();
-  router.addRoutes(params);
-};
+  resetRouter()
+  router.addRoutes(params)
+}
 
-window.router = router;
+window.router = router
 
 export default router
-
-
-
-
-
-

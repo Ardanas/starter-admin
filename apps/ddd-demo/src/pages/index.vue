@@ -1,3 +1,6 @@
+<script setup>
+// import request, { getMaps } from '@ddd/apis';
+</script>
 <template>
   <div>
     index.vue
