@@ -1,4 +1,4 @@
-import request from './request'
+import request from './src/request'
 
 export * from './uml'
 

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@ddd/apis": "workspace:^",
+    "@ddd/auae": "workspace:^",
     "element-plus": "^2.7.3",
     "nprogress": "^0.2.0",
     "pinia": "^2.1.7",
