@@ -1,10 +1,13 @@
 <script setup>
 // import request, { getMaps } from '@ddd/apis';
+
+import { Button } from '@ddd/components';
 </script>
 <template>
   <div>
-    index.vue
+    <Button />
     <el-tag>hello</el-tag>
+    <el-button type='primary'>world</el-button>
   </div>
 </template>
 
